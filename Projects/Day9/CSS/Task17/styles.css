@@ -1,0 +1,61 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  height: 70%;
+  width: 25%;
+  border-radius: 20px;
+}
+
+.a {
+  height: 15%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heart-a {
+  height: 9%;
+  width: 10%;
+  position: absolute;
+  top: 15%;
+  left: 1%;
+}
+
+.a-bottom {
+  height: 15%;
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.heart-a-bottom {
+  height: 9%;
+  width: 10%;
+  position: absolute;
+  bottom: 15%;
+  right: 1%;
+}
+
+.heart {
+  height: 15%;
+  width: 20%;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

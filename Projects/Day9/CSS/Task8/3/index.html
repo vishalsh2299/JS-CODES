@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task 8</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="left">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+          "
+        >
+          <i class="fa fa-plane"></i>
+          <span>FLIGHT</span>
+        </div>
+
+        <h3 style="margin-top: 20%">CHOOSE YOUR DIRECTION :</h3>
+        <div class="social">
+          <div class="social-link">
+            <a>FIND US ON <b>FACEBOOK</b> </a>
+          </div>
+
+          <div class="social-link">
+            <a>OUR <b>YOUTUBE</b> CHANNEL</a>
+          </div>
+          <div class="social-link">
+            <a>OUR <b>TWITTER</b> HANDLE</a>
+          </div>
+        </div>
+        <button><i class="fa fa-phone"></i> Contact Us Now</button>
+      </div>
+      <div class="right">
+        <h3 style="padding-bottom: 1rem;">Check availability for direction :</h3 style="padding-bottom: 1rem;">
+        <hr />
+        <form>
+          <div style="display: flex; justify-content: space-between; padding-top: 1rem;">
+            <label
+              ><b>FROM :</b>
+              <br />
+              <select name="from" class="dropdown-input">
+                <option value="India">India</option>
+                <option value="China">US</option>
+                <option value="Canada">Africa</option>
+                <option value="UK">UK</option>
+              </select>
+            </label>
+            <label
+              ><b>TO :</b>
+              <br />
+              <select name="from" class="dropdown-input">
+                <option value="India">India</option>
+                <option value="China">US</option>
+                <option value="Canada">Africa</option>
+                <option value="UK">UK</option>
+              </select>
+            </label>
+            </div>
+
+          <br />
+          <div style="display: flex; justify-content: space-between; padding-top: 1rem;">
+            
+            <label >
+                <b>Departure Date :</b>
+                <input style="width: 80%;
+                margin-top: 0.5rem;
+                padding: 0.5rem 1rem;
+                border: none;" type="date" required />
+            </label>
+           
+            
+            <label style="margin-left: 1rem;">
+                <b>Return Date :</b>
+                <input style="width: 80%;
+                margin-top: 0.5rem;
+                padding: 0.5rem 1rem;
+                border: none;"  type="date"/>
+            </label>
+            
+        </div>
+          
+          <br />
+
+          <div style="display: flex; align-items: baseline;">
+            <input type="radio"  id="round"/><label
+            id="round-label"
+            ><b>Round</b></label
+          >
+        
+            <input style="float: left;"
+            type="radio"
+            id="oneway"
+          /><label id="oneway-label"><b>Oneway</b></label>
+       
+         
+          <button style="float: right; font-size: 1rem; white-space: nowrap;">Order ticket now</button>
+          </div>
+         
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e0e0e0;
+  color: rgb(5, 0, 0);
+}
+
+textarea.md-textarea-scroll {
+  overflow-x: visible;
+}
+textarea.md-textarea {
+  padding: 0;
+  resize: none;
+  min-width: 3rem;
+  white-space: nowrap;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+
+  font-size: 18px;
+}
+
+.calculator {
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: grid;
+  grid-gap: 10px 10px;
+  border-radius: 40px;
+  /* overflow: hidden; */
+  padding: 1.3rem;
+}
+
+.calculator--pressed {
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.calculator span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  place-items: center;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: 0.65rem;
+  cursor: pointer;
+  box-shadow: inset 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    inset -8px -8px 16px 0 rgba(255, 255, 255, 0.4);
+}
+
+.calculator span:active {
+  background: #c4edf8;
+  color: #111;
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 120px;
+  border-radius: 45%;
+}
+
+.calculator span.zero {
+  grid-column: span 2;
+  width: 120px;
+  border-radius: 45%;
+}
+
+.calculator span.equal {
+  grid-row: span 2;
+  height: 120px;
+  margin-top: 10px;
+  border-radius: 40%;
+}

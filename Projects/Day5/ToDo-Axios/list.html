@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>ToDo</h1>
+      <ul></ul>
+
+      <div id="new-todos">
+        <form>
+          <input type="text" id="new-todos__title" />
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <ul class="list">
+        <li id="clear">Completed</li>
+        <li id="complete">Complete</li>
+        <li id="active">Active</li>
+        <li id="all">All</li>
+        <li class="count" id="items-left">
+          <strong>0</strong>&nbsp; items left
+        </li>
+      </ul>
+    </footer>
+    <script src="list.js"></script>
+  </body>
+</html>

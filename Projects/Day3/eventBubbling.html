@@ -1,0 +1,35 @@
+<html lang="en" onclick="alert('HTML Clicked')">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+  </head>
+  <body>
+    <div style="padding: 25px; background-color: red" id="red">
+      <div style="padding: 25px; background-color: yellow" id="yellow">
+        <div style="padding: 25px; background-color: blue" id="blue"></div>
+      </div>
+    </div>
+
+    <script>
+      // as per event bubbling if we click on blue(inner most), event will bubble up till document object
+      // so all will show alert including HTML
+      // if we click red only then red and HTML will show not the inner ones.
+      // to stop this we use stopPropagation
+      document.getElementById("red").addEventListener("click", () => {
+        alert("Clicked red");
+      });
+
+      document.getElementById("blue").addEventListener("click", () => {
+        alert("Clicked blue 1");
+        event.stopPropagation(); // but it will still run the elements of the same node, i.e. blue1 and blue2 both will run
+        // to stop that
+        event.stopImmediatePropagation(); // to stop all including parent node and same node.
+      });
+
+      document.getElementById("blue").addEventListener("click", () => {
+        alert("Clicked blue 2");
+      });
+    </script>
+  </body>
+</html>

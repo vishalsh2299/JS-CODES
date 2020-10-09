@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window & Document</title>
+</head>
+<body>
+    <script>
+        window.addEventListener("load",function() {
+            document.getElementById('btn').addEventListener("click", function() {
+            let boss = prompt("What's your name");
+            alert(`Hey ${boss}, I hope you're doing good`);
+        })
+        })
+        
+    </script>
+    <button id="btn">Click</button>
+    
+</body>
+</html>

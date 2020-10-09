@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event handling and Target</title>
+  </head>
+  <script>
+    function changeColor(e) {
+      // event.target is an inbuilt property in js which gives the DOM element that started the event
+      e.target.style.backgroundColor = "red";
+    }
+
+    window.onload = function () {
+      document.getElementById("first").onclick = changeColor;
+
+      document.getElementById("second").onclick = changeColor;
+    };
+  </script>
+  <body>
+    <button id="first">First</button>
+    <button id="second">Second</button>
+  </body>
+</html>

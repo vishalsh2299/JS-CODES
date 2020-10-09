@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Task 5</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Survey Form</h1>
+      <div class="form">
+        <span>Let us know how we can improve freeCodeCamp</span>
+        <div class="form-content">
+          <div class="left">
+            <span>*Name :</span>
+            <span>*Email :</span>
+            <span>*Age :</span>
+            <span style="text-align: right"
+              >Which option best describes your current role?</span
+            >
+            <span style="text-align: right"
+              >*How likely is that you would recommend <br />
+              freeCodeCamp to a friend?</span
+            >
+            <span style="text-align: right; padding-top: 2.5rem">
+              What do you like most in FCC:</span
+            >
+            <span style="text-align: right"
+              >Things that should be improved in the future <br />(Check all
+              that apply):
+            </span>
+          </div>
+          <div class="right">
+            <span><input type="text" placeholder="Enter your name" /></span>
+            <span><input type="text" placeholder="Enter your Email" /></span>
+            <span
+              ><input type="number" value="1" min="1" max="8" placeholder="Age"
+            /></span>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                Student
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Employee</a>
+                <a class="dropdown-item" href="#">Faculty</a>
+                <a class="dropdown-item" href="#">Prime Minister</a>
+              </div>
+            </div>
+
+            <form>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="Definitely">Definitely</label><br />
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="Maybe">Maybe</label><br />
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Not sure</label>
+            </form>
+
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                Select an option
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Employee</a>
+                <a class="dropdown-item" href="#">Faculty</a>
+                <a class="dropdown-item" href="#">Prime Minister</a>
+              </div>
+            </div>
+
+            <form>
+              <input type="checkbox" />
+              <label for="vehicle1"> Front-end Projects</label><br />
+              <input type="checkbox" />
+              <label for="vehicle2"> Back-end Projects</label><br />
+              <input type="checkbox" />
+              <label for="vehicle3"> Data Visualization</label><br /><br />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

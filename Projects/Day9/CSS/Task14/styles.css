@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  background-color: lightblue;
+  list-style: none;
+  align-items: center;
+}
+
+.search {
+  flex: 1;
+  padding-top: 0;
+}
+
+.container > li {
+  padding: 1rem;
+}
+
+input {
+  padding: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: darkblue !important;
+  color: #fff;
+}

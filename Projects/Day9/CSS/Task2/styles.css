@@ -1,0 +1,63 @@
+body {
+  font-family: system-ui, BlinkMacSystemFont, "Roboto", arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  height: 12rem;
+  width: 38rem;
+  margin-top: 8rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  color: rgb(109, 105, 105);
+  border-radius: 5px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+li {
+  padding-right: 1rem;
+}

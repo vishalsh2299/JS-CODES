@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>TODO-DB APP</title>
+  </head>
+  <body>
+    <div class="box" id="heading">
+      <h1>TODO-LIST</h1>
+    </div>
+
+    <div class="box">
+      <% newListItems.forEach((item) => { %>
+
+      <form action="/delete" method="post">
+        <div class="item">
+          <input type="checkbox" name="checkbox" value="<%= item._id %>"
+          onchange="window.location = '/toggle?id=<%= item._id %>'" <%=
+          item.isCompleted ? "checked" : null %> >
+
+          <p><%= item.name %></p>
+          <button class="delete" onclick="this.form.submit">&#10005;</button>
+        </div>
+      </form>
+      <% }); %> <% if(newListItems.length === 0) { %>
+      <div class="empty"><span>List is Empty... </span></div>
+      <% } %>
+
+      <form action="/" method="post">
+        <input
+          type="text"
+          name="newItem"
+          placeholder="New Item"
+          autocomplete="off"
+        />
+        <button class="submit" type="submit" name="list" value="todolist">
+          +
+        </button>
+      </form>
+    </div>
+
+    <body>
+      <footer class="footer" style="display: block">
+        <span class="count"
+          ><strong><%= newListItems.length %> items left</strong></span
+        >
+        <ul class="list">
+          <li
+            style="margin-right: 0rem"
+            onclick="window.location = '/clearcomplete'"
+            %
+          >
+            Clear Completed
+          </li>
+          <li onclick="window.location = '/complete'" %>>Complete</li>
+          <li onclick="window.location = '/active'" %>>Active</li>
+          <li onclick="window.location = '/'" %>>All</li>
+        </ul>
+      </footer>
+    </body>
+  </body>
+</html>

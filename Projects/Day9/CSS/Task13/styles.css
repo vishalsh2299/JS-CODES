@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.col-1 {
+  flex: 1 1 50%;
+  height: 100%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-2 {
+  flex: 1 1 50%;
+  height: 100%;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgb(51, 49, 49);
+}

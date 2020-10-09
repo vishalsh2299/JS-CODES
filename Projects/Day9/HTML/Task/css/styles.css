@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  max-height: 100%;
+}
+
+.main {
+  padding: 2rem;
+  padding-right: 4rem;
+  max-height: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.logo {
+  width: 8rem;
+  height: 4rem;
+  float: left;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.links {
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(152, 155, 158);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-top: 8px solid transparent;
+}
+
+.navbar a:hover {
+  border-top: 8px solid rgb(48, 167, 127);
+  font-weight: 600;
+}
+
+.navbar a.active {
+  border-top: 8px solid rgb(48, 167, 127);
+  font-weight: 600;
+}
+
+.content {
+  height: 100%;
+  background-image: url(../img/person.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+
+span {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+.projects {
+  margin-top: 3rem;
+  color: rgb(143, 98, 98);
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: blanchedalmond;
+}
+
+.contact {
+  margin-top: 3rem;
+  height: 30%;
+  color: rgb(143, 98, 98);
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: blanchedalmond;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+}

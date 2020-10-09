@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Todo App MVC</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- <button id="toggleAll">click</button> -->
+    <footer class="footer" style="display: block">
+      <span class="count"><strong>0</strong> items left</span>
+      <ul class="list">
+        <li id="clear" style="margin-right: 0rem">Clear Completed</li>
+        <li id="completed">Complete</li>
+        <li id="active">Active</li>
+        <li id="all">All</li>
+      </ul>
+    </footer>
+
+    <script src="./Model/model.js"></script>
+
+    <script src="./View/view.js"></script>
+    <script src="./Controller/controller.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+<script>
+  window.onload = function () {
+    class TodoItemModel {
+      constructor(caption, isCompleted) {
+        this.caption = caption;
+        this.isCompleted = isCompleted;
+      }
+
+      toggle() {
+        this.isCompleted = !this.isCompleted;
+      }
+    }
+
+    class AppViewModel {
+      constructor() {
+        this.todoCollection = [];
+        this.filterType = "all";
+      }
+      addTodoItem(todoItem) {
+        this.todoCollection.push(todoItem);
+      }
+
+      render() {
+          var self = this; // to get the reference of this ( in loop there is "this" reference of that)
+          // we get the instance of app view model
+
+        document.getElementById("list").innerHTML = "";
+
+        for (var i in this.todoCollection) {
+          var itemDOM = document.createElement("li");
+
+          var itemCheckBox = document.createElement("input");
+          itemCheckBox.type = "checkbox";
+
+          var itemCaption = document.createElement("span");
+          itemCaption.innerHTML = this.todoCollection[i].caption;
+
+          var itemDeleteBtn = document.createElement("button");
+          itemDeleteBtn.innerHTML = "x";
+
+          itemDeleteBtn.onclick = function (input) {
+           // console.log(this);
+        //    console.log(self);
+           console.log(self.todoCollection[input]);
+          }.bind(null,i);
+
+          itemDOM.appendChild(itemCheckBox);
+          itemDOM.appendChild(itemCaption);
+          itemDOM.appendChild(itemDeleteBtn);
+
+          document.getElementById("list").appendChild(itemDOM);
+        }
+      }
+    }
+
+    var app = new AppViewModel();
+    var todoItem = new TodoItemModel("Do this", false);
+    var todoItem2 = new TodoItemModel("123 this", false);
+    var todoItem3 = new TodoItemModel("Third one", false);
+
+    app.addTodoItem(todoItem);
+    app.addTodoItem(todoItem2);
+    app.addTodoItem(todoItem3);
+
+    app.render();
+  };
+</script> -->

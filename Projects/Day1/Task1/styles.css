@@ -1,0 +1,52 @@
+.btn {
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.btn1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 15%;
+    margin-top: 10%;
+    margin-left:2%;
+    margin-right:70%;
+  position: relative;
+}
+
+.btn2 {
+    background-color: #af744c; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 15%;margin-left:2%;
+    margin-right:70%;
+    margin-top: 10%;
+    position: relative;
+}
+
+.btn3 {
+    background-color: #4ca0af; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 15%;
+    margin-left:2%;
+  margin-right:70%;
+  margin-top: 10%;
+  position: relative;
+}

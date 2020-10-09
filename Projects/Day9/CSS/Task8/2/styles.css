@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 10rem;
+}
+
+.navbar {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  width: 100%;
+  font-size: 1.4em;
+}
+
+.navbar a:hover {
+  background: yellow;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar a.active {
+  background: yellow;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#card {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5rem;
+  cursor: pointer;
+}
+
+#card1 {
+  width: 25%;
+  margin-top: 7%;
+  height: 390px;
+  margin-left: 8.3%;
+  background: rgba(232, 236, 241, 0.6);
+  color: white;
+  text-align: center;
+  overflow: auto;
+  transition: all 0.3s ease-out;
+}
+
+#card1:hover {
+  transform: scale(1.2);
+}
+
+#card2 {
+  width: 25%;
+  margin-top: -390px;
+  height: 390px;
+  margin-left: 37.6%;
+  background: rgba(232, 236, 241, 0.6);
+  color: white;
+  text-align: center;
+  overflow: auto;
+  transition: all 0.3s ease-out;
+}
+
+#card2:hover {
+  transform: scale(1.2);
+}
+
+#card3 {
+  width: 25%;
+  margin-top: -390px;
+  height: 390px;
+  margin-left: 66.9%;
+  background: rgba(232, 236, 241, 0.6);
+  color: white;
+  text-align: center;
+  overflow: auto;
+  transition: all 0.3s ease-out;
+}
+
+#card3:hover {
+  transform: scale(1.2);
+}
+
+.inner-card {
+  margin-top: 3rem;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  overflow: auto;
+  background: rgb(228, 225, 225);
+  padding-bottom: 1%;
+  height: 100px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+table {
+  margin-top: 10%;
+  font-size: 0.8em;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+td {
+  background-color: #eee;
+  padding: 5px;
+}

@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>TODO APP- USING BRUTE FORCE</title>
+  </head>
+  <body>
+    <div>
+      <section class="todoapp">
+        <header class="header">
+          <h1>todos</h1>
+          <input class="todo" type="text" id="task" />
+        </header>
+      </section>
+    </div>
+
+    <ul class="todo-list" id="list"></ul>
+
+    <script>
+      document.getElementById("task").onkeypress = function (e) {
+        // direct to dom access in this case, appropriate approach data to dom
+        if (e.keyCode == 13) {
+          // 13 -> enter
+
+          var li = document.createElement("li");
+          var span = document.createElement("span");
+          var check = document.createElement("input");
+          var btn = document.createElement("button");
+
+          btn.type = "button";
+          btn.innerHTML = "Delete";
+
+          check.type = "checkbox";
+          var style = "text-decoration:line-through; list-style-type: none;";
+
+          span.innerHTML = e.target.value;
+          li.style = "list-style-type: none;";
+
+          var candidate = document.getElementById("task");
+          li.setAttribute("id", candidate.value);
+          check.setAttribute("id", candidate.value);
+          btn.setAttribute("id", candidate.value);
+          //btn.classList.add("destroy");
+
+          li.appendChild(span);
+          li.appendChild(check);
+          li.appendChild(btn);
+
+          document.getElementById("list").appendChild(li);
+
+          check.addEventListener("click", function () {
+            if (check.checked == true) {
+              li.style = style;
+            } else {
+              li.style = "list-style-type: none;";
+            }
+          });
+
+          btn.addEventListener("click", function (e) {
+            if (check.checked == true) {
+              console.log(e);
+              var del = document.getElementById("list");
+              var ele = e.target.id;
+
+              var item = document.getElementById(ele); //.removeChild();
+              item.parentNode.removeChild(item);
+            } else {
+              alert("Check it. Mark it done!!!");
+            }
+          });
+          document.getElementById("task").value = "";
+
+          //console.log(e);
+        }
+      };
+    </script>
+  </body>
+</html>

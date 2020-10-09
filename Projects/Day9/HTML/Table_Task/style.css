@@ -1,0 +1,167 @@
+body {
+  font-size: 1.5rem;
+  /* background-color: cadetblue; */
+}
+h2 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  border: none;
+}
+
+tr:first-child {
+  border-bottom: 2px solid;
+}
+
+th,
+td {
+  text-align: left;
+  border: none;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* SECOND TABLE */
+
+.second-tr {
+  background-color: cadetblue !important;
+  border: 2px solid !important;
+}
+
+.second-td {
+  border: 2px solid !important;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
+.second-th {
+  border: 2px solid !important;
+  text-align: center;
+}
+
+.second-tr th td {
+  border: 2px solid;
+}
+
+/* THIRD TABLE */
+
+.second-tr {
+  background-color: cadetblue !important;
+  border: 2px solid !important;
+}
+
+#table1 {
+  border: 2px solid;
+}
+
+#inner {
+  border: 2px solid;
+}
+
+#table2 {
+  border: 2px solid;
+}
+
+/* FOURTH TABLE */
+#inner4 {
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+#table4 {
+  width: 100%;
+  border: 2px solid;
+}
+
+/* FIFTH TABLE */
+.table5 {
+  border: 4px solid;
+  text-align: center;
+}
+
+.table5-tr {
+  border: 2px solid;
+}
+
+.table5-td {
+  border: 2px solid;
+  text-align: center;
+  padding: 1rem;
+}
+.table5-th {
+  border: 2px solid;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* THIS IS COPIED*/
+/* Using class */
+/* .employes {
+  color: black;
+  font-size: 30px;
+  padding-left: 30px;
+  text-align: center;
+  border: 5px solid;
+  width: 50%;
+  height: 60%;
+  margin: 50px;
+} */
+/* Using the id */
+/* #company {
+  color: salmon;
+  font-size: 35px;
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+.annotate {
+  font-style: italic;
+  color: #366ed4;
+}
+
+[role="table"] {
+  display: table;
+}
+
+[role="table"] > div[id] {
+  display: table-caption;
+  font-style: italic;
+}
+
+[role="table"] [role="row"] {
+  display: table-row;
+}
+
+[role="table"] [role="cell"],
+[role="table"] [role="columnheader"] {
+  display: table-cell;
+  padding: 0.125em 0.25em;
+  width: 8em;
+}
+
+[role="table"] [role="columnheader"] {
+  font-weight: bold;
+  border-bottom: thin solid #888;
+}
+
+[role="table"] [role="rowgroup"]:last-child [role="row"]:nth-child(odd) {
+  background-color: #ddd;
+} */

@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target & CurrentTarget</title>
+  </head>
+  <body>
+    <div id="container">
+      <ul id="list">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+      </ul>
+    </div>
+
+    <div style="padding: 25px; background-color: red" id="red">
+      <div style="padding: 25px; background-color: yellow" id="yellow">
+        <div style="padding: 25px; background-color: blue" id="blue"></div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("list").addEventListener("click", function (e) {
+        // listener is on "ul" not on "li".
+        console.log(e.target); // it will give the specific element that got clicked inside the "ul"
+        console.log(e.currentTarget); // it will give the <ul><li> ...</li></ul> where the listener is set
+      });
+    </script>
+
+    <script>
+      // the target will be the div we clicked and current target will be the div where the handle was attached
+      document.getElementById("blue").addEventListener("click", (event) => {
+        console.log("Blue Handler target", event.target);
+        console.log("Blue Handler current target", event.currentTarget);
+      });
+
+      document.getElementById("yellow").addEventListener("click", (event) => {
+        console.log("Yellow Handler target", event.target);
+        console.log("Yellow Handler current target", event.currentTarget);
+      });
+
+      document.getElementById("red").addEventListener("click", (event) => {
+        console.log("Red Handler target", event.target);
+        console.log("Red Handler current target", event.currentTarget);
+      });
+    </script>
+  </body>
+</html>

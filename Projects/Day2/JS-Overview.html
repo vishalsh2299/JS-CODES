@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Overview</title>
+  </head>
+  <body>
+    <script>
+      alert(kiddoFunc);
+
+      function kiddoFunc() {
+        // tokenized before the runtime
+        alert("Hey kiddo!!");
+      }
+
+      //   var kiddoFunc = function () {
+      //     // assigned during the runtime so it does not shows the alert. As called before
+      //     alert("Not a Good Kiddo");
+      //   };
+
+      // to run the "Not Good Kiddo", do it with window load.
+      //window.onload = kiddoFunc;
+      //window.addEventListener("load", kiddoFunc); // kiddoFunc() <- this will execute it immediately, works if it returns another function
+    </script>
+
+    <script>
+      var outer = function () {
+        console.log("Outer function");
+
+        function hello() {
+          console.log("Hello");
+        }
+        hello();
+        return function () {
+          console.log("Inner Returned Function");
+        };
+      };
+
+      setTimeout(outer, 3000); // the function is passed to setTimeout and executed by javascript engine after 3sec
+      // the inner function is returned after 3sec to it wont run
+
+      setTimeout(outer(), 3000); // as () is used it will run the function immediately and print outer log,
+      // and pass the return to the setTimeout which is a function and that one is executed after 3sec by javascript engine
+    </script>
+  </body>
+</html>

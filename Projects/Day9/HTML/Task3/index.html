@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+  </head>
+
+  <body>
+    <div style="height: 100vh">
+      <ul
+        id="list"
+        style="
+          list-style: none;
+          color: #fff;
+          background-color: rgb(209, 66, 66);
+        "
+      ></ul>
+    </div>
+    <script>
+      const ul = document.getElementById("list");
+      for (var i = 1; i <= 10; i++) {
+        const li = document.createElement("ul");
+        li.innerHTML = i;
+        li.style.padding = "1.5rem";
+        li.style.fontSize = "1.5rem";
+        ul.appendChild(li);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,781 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>DASHBOARD</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- SIDE BAR -->
+      <nav id="side-bar" class="sideBar">
+        <div id="side-logo" class="sideBar-logo">
+          <img id="geekylogo" src="./img/geekyants-logo.png" alt="" />
+        </div>
+
+        <span>MAIN</span>
+        <ul class="side-nav">
+          <li class="side-nav__item side--nav__item--active">
+            <i class="fa fa-home fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Dashboard </a>
+            <span class="span">2</span>
+          </li>
+
+          <li class="side-nav__item">
+            <i class="fa fa-calendar fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Calendar </a>
+          </li>
+          <li class="side-nav__item">
+            <i class="fa fa-envelope fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Email </a>
+            <span
+              class="span"
+              style="
+                background-color: #343549;
+                font-size: 0.7rem;
+                color: #d7e4ec;
+              "
+              >></span
+            >
+          </li>
+          <li class="side-nav__item">
+            <i class="fa fa-vector-square fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> UI Elements </a>
+            <span
+              class="span"
+              style="
+                background-color: #343549;
+                font-size: 0.7rem;
+                color: #d7e4ec;
+              "
+              >></span
+            >
+          </li>
+          <li class="side-nav__item">
+            <i class="fab fa-wpforms fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Forms </a>
+            <span class="span" style="background-color: #29b491">9</span>
+          </li>
+
+          <li class="side-nav__item">
+            <i class="fas fa-chart-pie fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Charts </a>
+            <span
+              class="span"
+              style="
+                background-color: #343549;
+                font-size: 0.7rem;
+                color: #d7e4ec;
+              "
+              >></span
+            >
+          </li>
+          <li class="side-nav__item">
+            <i class="fas fa-border-all fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Tables </a>
+            <span
+              class="span"
+              style="
+                background-color: #343549;
+                font-size: 0.7rem;
+                color: #d7e4ec;
+              "
+              >></span
+            >
+          </li>
+
+          <li class="side-nav__item">
+            <i class="far fa-smile-beam fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Icons </a>
+            <span
+              class="span"
+              style="
+                background-color: #343549;
+                font-size: 0.7rem;
+                color: #d7e4ec;
+              "
+              >></span
+            >
+          </li>
+          <li class="side-nav__item">
+            <i class="fas fa-map-marker-alt fa-2px icon"></i>
+            <a href="#" class="side-nav__link"> Maps </a>
+            <span class="span" style="background-color: #ec4561">2</span>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CONTAINER -->
+      <div id="container-div" class="container">
+        <!-- HEADER -->
+        <header class="header">
+          <div class="header-left">
+            <div class="nav-btn">
+              <span
+                style="cursor: pointer"
+                id="hamburger"
+                class="fas fa-bars"
+              ></span>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">
+                Create
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">ADD</a>
+                <a href="#">DELETE</a>
+                <a href="#">MODIFY</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-right">
+            <div class="search">
+              <input type="text" placeholder="Search.." />
+              <span style="display: none" class="fas fa-search"></span>
+            </div>
+
+            <div class="dropdown">
+              <div style="display: flex; align-items: center">
+                <img style="height: 1.5rem" src="./img/english.png" alt="" />
+                <button class="dropbtn" style="background-color: #ededf1">
+                  English
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              </div>
+
+              <div class="dropdown-content">
+                <div style="display: flex; align-items: center">
+                  <img
+                    style="height: 1.5rem; padding-left: 5px"
+                    src="./img/india.png"
+                    alt=""
+                  />
+                  <a href="#">Hindi</a>
+                </div>
+
+                <div style="display: flex; align-items: center">
+                  <img
+                    style="height: 1.5rem; padding-left: 5px"
+                    src="./img/german.png"
+                    alt=""
+                  />
+                  <a href="#">German</a>
+                </div>
+
+                <div style="display: flex; align-items: center">
+                  <img
+                    style="height: 1.5rem; padding-left: 5px"
+                    src="./img/french.png"
+                    alt=""
+                  />
+                  <a href="#">French</a>
+                </div>
+              </div>
+            </div>
+
+            <span
+              ><i class="fas fa-vector-square" style="font-size: 1rem"></i>
+            </span>
+            <div class="header-nav">
+              <i class="far fa-bell" style="font-size: 1.1rem"></i>
+              <span>3</span>
+            </div>
+
+            <img class="header-img" src="./img/vishal.jpg" alt="" />
+          </div>
+        </header>
+
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+          <div class="dashboard--top">
+            <div>
+              <h3>Dashboard</h3>
+              <br />
+              <p>Welcome to Veltrix Dashboard</p>
+            </div>
+
+            <div class="dashboard--settings">
+              <i class="fas fa-cog" style="font-size: 1rem"></i>
+              <button style="padding: 2px; font-size: 1rem">Settings</button>
+            </div>
+          </div>
+
+          <div class="content">
+            <!-- CARDS -->
+            <div class="cards">
+              <div class="cards-1">
+                <div class="cards-1--top">
+                  <div class="cards-icon">
+                    <img
+                      src="./img/form-card.png"
+                      style="width: 50%; height: 50%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-orders">
+                    <span style="color: #c2c2f3; font-size: 0.8rem"
+                      >ORDERS</span
+                    >
+                    <span
+                      style="
+                        color: #ededf1;
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                      "
+                      >1,685</span
+                    >
+                  </div>
+                  <div class="card-ribbon">
+                    <div class="ribbon">
+                      <span
+                        style="position: absolute; right: 0.5rem; top: 0.5rem"
+                        >+12%</span
+                      >
+                    </div>
+                    <div>
+                      <span style="color: #2aa39a; font-size: 1.5rem"
+                        >&#8593;</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div style="padding-top: 2rem">
+                  <span style="color: #c2c2f3; float: left"
+                    >Since last month</span
+                  >
+                  <span
+                    style="
+                      color: #c2c2f3;
+                      float: right;
+                      padding-right: 1rem;
+                      font-size: 1.2rem;
+                    "
+                    >&#8594;</span
+                  >
+                </div>
+              </div>
+
+              <div class="cards-1">
+                <div class="cards-1--top">
+                  <div class="cards-icon">
+                    <img
+                      src="./img/revenue.png"
+                      style="width: 50%; height: 50%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-orders">
+                    <span style="color: #c2c2f3; font-size: 0.8rem"
+                      >REVENUE</span
+                    >
+                    <span
+                      style="
+                        color: #ededf1;
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                      "
+                      >52,368</span
+                    >
+                  </div>
+                  <div class="card-ribbon">
+                    <div class="ribbon" style="background-color: #ec4561">
+                      <span
+                        style="position: absolute; right: 0.5rem; top: 0.5rem"
+                        >+28%</span
+                      >
+                    </div>
+                    <span style="color: #ec4561; font-size: 1.5rem"
+                      >&#8595;</span
+                    >
+                  </div>
+                </div>
+
+                <div style="padding-top: 2rem">
+                  <span style="color: #c2c2f3; float: left"
+                    >Since last month</span
+                  >
+                  <span
+                    style="
+                      color: #c2c2f3;
+                      float: right;
+                      padding-right: 1rem;
+                      font-size: 1.2rem;
+                    "
+                    >&#8594;</span
+                  >
+                </div>
+              </div>
+
+              <div class="cards-1">
+                <div class="cards-1--top">
+                  <div class="cards-icon">
+                    <img
+                      src="./img/pen.png"
+                      style="width: 50%; height: 50%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-orders">
+                    <span style="color: #c2c2f3; font-size: 0.8rem"
+                      >AVERAGE PRICE</span
+                    >
+                    <span
+                      style="
+                        color: #ededf1;
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                      "
+                      >15.8</span
+                    >
+                  </div>
+                  <div class="card-ribbon">
+                    <div class="ribbon" style="background-color: #38a5f8">
+                      <span
+                        style="position: absolute; right: 0.5rem; top: 0.5rem"
+                        >00%</span
+                      >
+                    </div>
+                    <span style="color: #38a5f8; font-size: 1.5rem"
+                      >&#8593;</span
+                    >
+                  </div>
+                </div>
+
+                <div style="padding-top: 2rem">
+                  <span style="color: #c2c2f3; float: left"
+                    >Since last month</span
+                  >
+                  <span
+                    style="
+                      color: #c2c2f3;
+                      float: right;
+                      padding-right: 1rem;
+                      font-size: 1.2rem;
+                    "
+                    >&#8594;</span
+                  >
+                </div>
+              </div>
+
+              <div class="cards-1">
+                <div class="cards-1--top">
+                  <div class="cards-icon">
+                    <img
+                      src="./img/case.png"
+                      style="width: 50%; height: 50%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-orders">
+                    <span style="color: #c2c2f3; font-size: 0.8rem"
+                      >PRODUCT SOLD</span
+                    >
+                    <span
+                      style="
+                        color: #ededf1;
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                      "
+                      >2436</span
+                    >
+                  </div>
+                  <div class="card-ribbon">
+                    <div class="ribbon" style="background-color: #f8b425">
+                      <span
+                        style="position: absolute; right: 0.5rem; top: 0.5rem"
+                        >+84%</span
+                      >
+                    </div>
+                    <span style="color: #f8b425; font-size: 1.5rem"
+                      >&#8593;</span
+                    >
+                  </div>
+                </div>
+
+                <div style="padding-top: 2rem">
+                  <span style="color: #c2c2f3; float: left"
+                    >Since last month</span
+                  >
+                  <span
+                    style="
+                      color: #c2c2f3;
+                      float: right;
+                      padding-right: 1rem;
+                      font-size: 1.2rem;
+                    "
+                    >&#8594;</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- TRANSACTION AND CHAT -->
+            <div class="trans">
+              <!-- TRANSACTION -->
+              <div class="transaction">
+                <div style="margin-bottom: 1rem">
+                  <span style="color: #6e6e8a; font-weight: 600"
+                    >Latest Transaction</span
+                  >
+                </div>
+
+                <div>
+                  <table style="width: 100%">
+                    <tr>
+                      <th>(#) Id</th>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                    <tr>
+                      <td>#14256</td>
+                      <td style="text-align: start">
+                        <div class="transaction-image">
+                          <img
+                            style="
+                              height: 100%;
+                              width: 2rem;
+                              border-radius: 50%;
+                              vertical-align: middle;
+                            "
+                            src="./img/cris.jpg"
+                            alt=""
+                          />
+                          <span>&nbsp;Smith Jhonshon</span>
+                        </div>
+                      </td>
+                      <td>15/1/2018</td>
+                      <td>$94</td>
+                      <td>
+                        <span
+                          style="
+                            color: #ededf1;
+                            background-color: #2aa39a;
+                            padding: 0.2rem;
+                            border-radius: 5px;
+                          "
+                          >Delivered</span
+                        >
+                      </td>
+                      <td><button>Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>#14257</td>
+                      <td>
+                        <div class="transaction-image">
+                          <img
+                            style="
+                              height: 100%;
+                              width: 2rem;
+                              border-radius: 50%;
+                              vertical-align: middle;
+                            "
+                            src="./img/peter.jpg"
+                            alt=""
+                          />
+                          <span>&nbsp;Jackson Thompson</span>
+                        </div>
+                      </td>
+                      <td>16/1/2019</td>
+                      <td>$112</td>
+                      <td>
+                        <span
+                          style="
+                            color: #ededf1;
+                            background-color: #f8b425;
+                            padding: 0.2rem;
+                            border-radius: 5px;
+                          "
+                          >Pending</span
+                        >
+                      </td>
+                      <td><button>Edit</button></td>
+                    </tr>
+                    <tr style="background-color: #e8e9ee">
+                      <td>#14258</td>
+                      <td>
+                        <div class="transaction-image">
+                          <img
+                            style="
+                              height: 100%;
+                              width: 2rem;
+                              border-radius: 50%;
+                              vertical-align: middle;
+                            "
+                            src="./img/hulk.jpg"
+                            alt=""
+                          />
+                          <span>&nbsp;Robert Pistol</span>
+                        </div>
+                      </td>
+                      <td>17/1/2019</td>
+                      <td>$116</td>
+                      <td>
+                        <span
+                          style="
+                            color: #ededf1;
+                            background-color: #2aa39a;
+                            padding: 0.2rem;
+                            border-radius: 5px;
+                          "
+                          >Delivered</span
+                        >
+                      </td>
+                      <td><button>Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>#14259</td>
+                      <td>
+                        <div class="transaction-image">
+                          <img
+                            style="
+                              height: 100%;
+                              width: 2rem;
+                              border-radius: 50%;
+                              vertical-align: middle;
+                            "
+                            src="./img/widow.jpeg"
+                            alt=""
+                          />
+                          <span>&nbsp;Steffy Bennig</span>
+                        </div>
+                      </td>
+                      <td>18/1/2019</td>
+                      <td>$109</td>
+                      <td>
+                        <span
+                          style="
+                            color: #ededf1;
+                            background-color: #ec4561;
+                            padding: 0.2rem;
+                            border-radius: 5px;
+                          "
+                          >Cancel</span
+                        >
+                      </td>
+                      <td><button>Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>#14260</td>
+                      <td>
+                        <div class="transaction-image">
+                          <img
+                            style="
+                              height: 100%;
+                              width: 2rem;
+                              border-radius: 50%;
+                              vertical-align: middle;
+                            "
+                            src="./img/thor.jpg"
+                            alt=""
+                          />
+                          <span>&nbsp;Criss Geller</span>
+                        </div>
+                      </td>
+                      <td>18/1/2019</td>
+                      <td>$120</td>
+                      <td>
+                        <span
+                          style="
+                            color: #ededf1;
+                            background-color: #2aa39a;
+                            padding: 0.2rem;
+                            border-radius: 5px;
+                          "
+                          >Delivered</span
+                        >
+                      </td>
+                      <td><button>Edit</button></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <!-- CHAT -->
+              <div class="chat">
+                <span style="color: #6e6e8a; font-weight: 600">Chat</span>
+                <div class="chat-box">
+                  <div class="chat-box-div">
+                    <div style="padding: 1rem 0.5rem">
+                      <img
+                        style="
+                          height: 2.5rem;
+                          width: 2.5rem;
+                          border-radius: 50%;
+                        "
+                        src="./img/widow.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="chat-container">
+                      <span style="font-weight: 600">John Deo</span>
+                      <span>Hello!</span>
+                    </div>
+                  </div>
+
+                  <div class="chat-box-div" style="align-self: flex-end">
+                    <div class="chat-container-right">
+                      <span style="font-weight: 600; text-align: right"
+                        >Smith</span
+                      >
+                      <span style="color: #929296; text-align: right"
+                        >Hi, How are you? What about our next meeting</span
+                      >
+                    </div>
+                    <div style="padding: 1rem 0.5rem">
+                      <img
+                        style="
+                          height: 2.5rem;
+                          width: 2.5rem;
+                          border-radius: 50%;
+                        "
+                        src="./img/thor.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="chat-box-div">
+                    <div style="padding: 1rem 0.5rem">
+                      <img
+                        style="
+                          height: 2.5rem;
+                          width: 2.5rem;
+                          border-radius: 50%;
+                        "
+                        src="./img/widow.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="chat-container">
+                      <span style="font-weight: 600">John Deo</span>
+                      <span>Yeah everything is fine</span>
+                    </div>
+                  </div>
+
+                  <div class="chat-box-div" style="align-self: flex-end">
+                    <div class="chat-container-right">
+                      <span style="font-weight: 600; text-align: right"
+                        >Smith</span
+                      >
+                      <span style="color: #929296; text-align: right"
+                        >Wow that's great</span
+                      >
+                    </div>
+                    <div style="padding: 1rem 0.5rem">
+                      <img
+                        style="
+                          height: 2.5rem;
+                          width: 2.5rem;
+                          border-radius: 50%;
+                        "
+                        src="./img/thor.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="chat-box-div" style="align-self: flex-end">
+                    <div class="chat-container-right">
+                      <span style="font-weight: 600; text-align: right"
+                        >Smith</span
+                      >
+                      <span style="color: #929296; text-align: right"
+                        >Schedule the meeting whenever you are available</span
+                      >
+                    </div>
+                    <div style="padding: 1rem 0.5rem">
+                      <img
+                        style="
+                          height: 2.5rem;
+                          width: 2.5rem;
+                          border-radius: 50%;
+                        "
+                        src="./img/thor.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="chat-box-div">
+                    <div style="padding: 1rem 0.5rem">
+                      <img
+                        style="
+                          height: 2.5rem;
+                          width: 2.5rem;
+                          border-radius: 50%;
+                        "
+                        src="./img/widow.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="chat-container">
+                      <span style="font-weight: 600">John Deo</span>
+                      <span>Okay i will tell you as soon as possible</span>
+                    </div>
+                  </div>
+
+                  <div class="chat-box-div" style="align-self: flex-end">
+                    <div class="chat-container-right">
+                      <span style="font-weight: 600; text-align: right"
+                        >Smith</span
+                      >
+                      <span style="color: #929296; text-align: right"
+                        >Let's go to wakanda</span
+                      >
+                    </div>
+                    <div style="padding: 1rem 0.5rem">
+                      <img
+                        style="
+                          height: 2.5rem;
+                          width: 2.5rem;
+                          border-radius: 50%;
+                        "
+                        src="./img/thor.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chat-input">
+                  <input type="text" placeholder="Enter your text" />
+                  <button
+                    style="
+                      padding: 1em 1rem;
+                      background-color: #2aa39a;
+                      border: none;
+                      cursor: pointer;
+                      margin-top: 0.4rem;
+                    "
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascipt file -->
+    <script src="./js/dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
+</html>

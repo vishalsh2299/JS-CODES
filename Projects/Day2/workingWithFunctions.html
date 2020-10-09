@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with functions in JS</title>
+  </head>
+  <body>
+    <script>
+      // 1. Named Function using function keyword
+      function name1(p) {
+        console.log(`Hello ${p}`);
+      }
+      name1("Vishal");
+
+      // 2. Anonymous Function
+      let name2 = function (p) {
+        console.log(`I'm ${p}, The anonymous guy!!!`);
+      };
+      name2("Rahul");
+
+      // 3. Arrow Function
+      let name3 = (p) => {
+        console.log(`Welcome ${p} this is fat arrow function...`);
+      };
+      name3("Jatin");
+    </script>
+  </body>
+</html>

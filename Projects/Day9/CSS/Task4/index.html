@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Task 4</title>
+  </head>
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#know">What you should already know</a></li>
+      <li><a class="nav-link" href="#js">Javascript and Java</a></li>
+      <li><a class="nav-link" href="#hello">Hello world</a></li>
+      <li><a class="nav-link" href="#variables">Variables</a></li>
+    </ul>
+  </nav>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          JavaScript , often abbreviated as JS, is a programming language that
+          conforms to the ECMAScript specification. JavaScript is high-level,
+          often just-in-time compiled, and multi-paradigm. It has curly-bracket
+          syntax, dynamic typing, prototype-based object-orientation, and
+          first-class functions.The Mosaic web browser was released in 1993. As
+          the first browser with a graphical user interface accessible to
+          non-technical people, it played a prominent role in the rapid growth
+          of the nascent World Wide Web. The lead developers of Mosaic then
+          founded the Netscape corporation, which released a more polished
+          browser, Netscape Navigator, in 1994. Navigator quickly became the
+          most used browser.
+        </p>
+        <p>
+          During these formative years of the Web, web pages could only be
+          static, lacking the capability for dynamic behavior after the page was
+          loaded in the browser. There was a desire in the burgeoning web
+          development scene to remove this limitation, so in 1995, Netscape
+          decided to add a scripting language to Navigator. They pursued two
+          routes to achieve this: collaborating with Sun Microsystems to embed
+          the Java programming language, while also hiring Brendan Eich to embed
+          the Scheme language.Netscape management soon decided that the best
+          option was for Eich to devise a new language, with syntax similar to
+          Java and less like Scheme or other extant scripting languages.
+          Although the new language and its interpreter implementation were
+          officially called LiveScript when first shipped as part of a Navigator
+          release in September 1995, the name was changed to JavaScript three
+          months later.The choice of the JavaScript name has caused confusion,
+          sometimes giving the impression that it is a spin-off of Java. Since
+          Java was the hot new programming language at the time, this has been
+          characterized as a marketing ploy by Netscape to give its own new
+          language cachet.
+        </p>
+        <code>
+          function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+        <ul>
+          <li>
+            Client-side JavaScript extends the core language by supplying
+            objects to control a browser and its Document Object Model (DOM).
+          </li>
+          <li>
+            Server-side JavaScript extends the core language by supplying
+            objects relevant to running JavaScript on a server.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="know">
+        <header>What you should already know</header>
+        <p>
+          Alongside HTML and CSS, JavaScript is one of the core technologies of
+          the World Wide Web. JavaScript enables interactive web pages and is an
+          essential part of web applications. The vast majority of websites use
+          it for client-side page behavior, and all major web browsers have a
+          dedicated JavaScript engine to execute it.Microsoft debuted Internet
+          Explorer in 1995, leading to a browser war with Netscape. On the
+          JavaScript front, Microsoft reverse-engineered the Navigator
+          interpreter to create its own, called JScript.
+        </p>
+        <p>
+          As a multi-paradigm language, JavaScript supports event-driven,
+          functional, and imperative programming styles. It has application
+          programming interfaces (APIs) for working with text, dates, regular
+          expressions, standard data structures, and the Document Object Model
+          (DOM). However, the language itself does not include any input/output
+          (I/O), such as networking, storage, or graphics facilities, as the
+          host environment (usually a web browser) provides those APIs.Script
+          was first released in 1996, alongside initial support for CSS and
+          extensions to HTML. Each of these implementations was noticeably
+          different from their counterparts in Navigator. These differences made
+          it difficult for developers to make their websites work well in both
+          browsers, leading to widespread use of "best viewed in Netscape" and
+          "best viewed in Internet Explorer" logos for several years.
+        </p>
+        <code> if (true) { var x = 5; } console.log(x); // 5 </code>
+        <ul>
+          <li>
+            A general understanding of the Internet and the World Wide Web
+            (WWW).
+          </li>
+          <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+          <li>
+            Some programming experience. If you are new to programming, try one
+            of the tutorials linked on the main page about JavaScript.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="js">
+        <header>Javascript and Java</header>
+        <p>
+          In November 1996, Netscape submitted JavaScript to ECMA International,
+          as the starting point for a standard specification that all browser
+          vendors could conform to. This led to the official release of the
+          first ECMAScript language specification in June 1997.
+        </p>
+        <p>
+          Meanwhile, Microsoft gained an increasingly dominant position in the
+          browser market. By the early 2000s, Internet Explorer's market share
+          reached 95%. This meant that JScript became the de facto standard for
+          client-side scripting on the Web.Microsoft initially participated in
+          the standards process and implemented some proposals in its JScript
+          language, but eventually it stopped collaborating on ECMA work. Thus
+          ECMAScript 4 was mothballed.
+        </p>
+        <code>
+          if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+          defined
+        </code>
+      </section>
+      <section class="main-section" id="hello">
+        <header>Hello world</header>
+        <p>
+          During the period of Internet Explorer dominance in the early 2000s,
+          client-side scripting was stagnant. This started to change in 2004,
+          when the successor of Netscape, Mozilla, released the Firefox browser.
+          Firefox was well-received by many, taking significant market share
+          from Internet Explorer.Meanwhile, very important developments were
+          occurring in open source communities not affiliated with ECMA work. In
+          2005, Jesse James Garrett released a white paper in which he coined
+          the term Ajax and described a set of technologies, of which JavaScript
+          was the backbone, to create web applications where data can be loaded
+          in the background, avoiding the need for full page reloads. This
+          sparked a renaissance period of JavaScript, spearheaded by open source
+          libraries and the communities that formed around them. Many new
+          libraries were created, including jQuery, Prototype, Dojo Toolkit, and
+          MooTools.Google debuted its Chrome browser in 2008, with the V8
+          JavaScript engine that was the first to use just-in-time compilation,
+          significantly improving execution times. Other browser vendors needed
+          to overhaul their engines to compete.In July 2008, these disparate
+          parties came together for a conference in Oslo. This led to the
+          eventual agreement in early 2009 to combine all relevant work and
+          drive the language forward. The result was the ECMAScript 5 standard,
+          released in December 2009.
+        </p>
+        <p>
+          In 2005, Mozilla joined ECMA International, and work started on the
+          ECMAScript for XML (E4X) standard. This led to Mozilla working jointly
+          with Macromedia (later acquired by Adobe Systems), who were
+          implementing E4X in their ActionScript 3 language, which was based on
+          an ECMAScript 4 draft. The goal became standardizing ActionScript 3 as
+          the new ECMAScript 4. To this end, Adobe Systems released the Tamarin
+          implementation as an open source project. However, Tamarin and
+          ActionScript 3 were too different from established client-side
+          scripting, and without cooperation from Microsoft, ECMAScript 4 never
+          reached fruition.
+        </p>
+        <code> const PI = 3.14; </code>
+      </section>
+      <section class="main-section" id="variables">
+        <header>Variables</header>
+        <p>
+          Ambitious work on the language continued for several years,
+          culminating in an extensive collection of additions and refinements
+          being formalized with the publication of ECMAScript 6 in 2015.From
+          2016 to 2019, a new version of the ECMAScript standard was published
+          each year, but the scope of changes was much smaller than the 5th or
+          6th editions. Thus JavaScript can now be considered a mature language
+          that has largely settled down.
+        </p>
+        <p>
+          The current JavaScript ecosystem has many libraries and frameworks,
+          established programming practices, and increased usage of JavaScript
+          outside of web browsers. Plus, with the rise of single-page
+          applications and other JavaScript-heavy websites, a number of
+          transpilers have been created to aid the development process.
+        </p>
+        <code>
+          // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+          CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements }
+        </code>
+      </section>
+    </main>
+  </body>
+</html>

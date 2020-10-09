@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+  </head>
+  <body>
+    <script>
+      alert(
+        "When was this webpage created? Check page's title for the answer."
+      );
+
+      var d = new Date().toJSON().slice(0, 10).replace(/-/g, "/");
+      document.title = d;
+    </script>
+  </body>
+</html>

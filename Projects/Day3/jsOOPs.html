@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS OOPs Concepts</title>
+  </head>
+  <body>
+    <script>
+      console.log(this); // it will give the window object as no instance is created
+
+      function Human() {
+        console.log(this); // this will also give the window object because of the closure property this will point to the function it is inside i.e. window obj
+      }
+      Human(); // it will give window object
+
+      // if we use new with Human() we will create instance of it and this will point to that in that case
+      new Human(); // now this will give Human object.
+      // let var = new Human();
+
+      // same as
+      class HumanClass {
+        constructor() {
+          console.log(this);
+        }
+      }
+      new HumanClass();
+
+      // class without class keyword, another example
+      function Name(name) {
+        this.name = name;
+        this.walk = function () {
+          console.log(this.name + " is walking.");
+        };
+      }
+
+      let val = new Name("Vishal");
+      val.walk();
+      console.log(Name.prototype);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html lang="en">
+  <body>
+    <input
+      id="value"
+      type="text"
+      style="padding: 1.5rem; border: 5px solid salmon"
+    />
+    <button
+      id="btn"
+      style="
+        padding: 1.5rem;
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: salmon;
+      "
+    >
+      Click me
+    </button>
+    <br />
+    <span
+      id="text"
+      style="font-size: 2rem; color: salmon; padding: 2rem"
+    ></span>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        const span = document.getElementById("text");
+        const inp = document.getElementById("value");
+        span.innerText = inp.value;
+      });
+      console.log(inp);
+    </script>
+  </body>
+</html>

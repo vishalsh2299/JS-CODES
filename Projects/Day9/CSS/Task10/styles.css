@@ -1,0 +1,9 @@
+li {
+  list-style: none;
+  background-color: lightblue;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  border-bottom: 2px solid rgb(125, 125, 211);
+}

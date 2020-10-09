@@ -1,0 +1,72 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+
+const app = express();
+const port = 3000;
+
+app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({ extended: true }));
+
+var tasks = {
+  // don't
+  task: [
+    { caption: "First", isCompleted: false },
+    {
+      caption: "Second",
+      isCompleted: false,
+    },
+  ],
+};
+
+app.get("/", (req, res) => {
+  res.render("index", tasks);
+});
+
+app.post("/addTodo", (req, res) => {
+  //   if (!req.query.caption) {
+  //     res.redirect("/?errorMessage=" + escape("Caption cannot be left"));
+  //     return;
+  //   }
+
+  tasks.task.push({
+    caption: req.body.caption,
+    isCompleted: false,
+  });
+  res.redirect("/");
+  //res.send("Hey " + req.body.caption);
+});
+
+app.listen(port, () => {
+  console.log(`Listening to port ${port}`);
+});
+
+
+
+//////////////////
+<!-- <%- include("header") -%>
+
+<div class="box">
+
+</div>
+<ul>
+  <% for( var i =0; i< task.length; i++) { %>
+  <li><%= task[i].caption %></li>
+  <% } %>
+</ul>
+<form action="/addTodo" method="POST">
+  <input type="text" name="caption" />
+  <input type="submit" value="Add" />
+</form>
+<%- include("footer") -%> -->
+
+
+
+
+??????
+Item.insertMany(defaultItems, (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Successfully saved data to database");
+        }
+      });

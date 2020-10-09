@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Object</title>
+  </head>
+  <script>
+    window.onload = function () {
+      document.getElementById("btn").onclick = function (event) {
+        console.log(event);
+        // whenever an event occurs an event object is created by the browser and passed to the listener
+      };
+
+      document.getElementById("anc").onclick = function (event) {
+        console.log("Anchor Clicked");
+        event.preventDefault();
+        // it will prevent the default action of the element. In this case anchor tag wont take to google site.
+      };
+    };
+  </script>
+  <body>
+    <button id="btn">Click Me</button>
+
+    <a href="https://www.google.com" id="anc">Google</a>
+  </body>
+</html>

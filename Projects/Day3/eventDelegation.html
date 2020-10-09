@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+  </head>
+  <body>
+    <div id="container">
+      <ul id="list">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+      </ul>
+    </div>
+
+    <script>
+      // Using event delegation we can add an event listener to one parent and avoid to add many event listeners to specific node
+      // as in above case we dont need to add listener to every single "li" or "a"
+
+      document.addEventListener("click", function (e) {
+        if (e.target && e.target.nodeName == "A") {
+          // A-> anchor tag
+          console.log("List item ", e.target.textContent, " was clicked!");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!-- Bind function changes the reference of this -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assingment Changing reference of this using bind</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var list = ["first", "second"];
+
+      for (var i in list) {
+        var li = document.createElement("li");
+        var textNode = document.createTextNode(list[i]);
+        var btn = document.createElement("button");
+        btn.innerHTML = "index";
+        console.log(i);
+        btn.onclick = function (i) {
+          alert("index is " + i);
+        }.bind(null, i);
+        li.appendChild(textNode);
+        li.appendChild(btn);
+        document.getElementById("root").appendChild(li);
+      }
+    </script>
+  </body>
+</html>

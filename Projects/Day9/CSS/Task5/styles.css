@@ -1,0 +1,79 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(137, 204, 206);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+h1 {
+  align-self: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form {
+  background-color: #fff;
+  align-self: center;
+  height: 100%;
+  width: 80%;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  padding: 2rem 0;
+  color: rgb(110, 105, 105);
+}
+
+.form-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.left {
+  flex: 1 1 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right {
+  flex: 1 1 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+span {
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+span input {
+  padding: 0.5rem;
+  border: 2px solid lightgray;
+  width: 100%;
+}
+
+.right span {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  width: 50%;
+}
+
+.btn {
+  background-color: rgb(243, 239, 239);
+}
+
+form {
+  text-align: left;
+  padding-top: 2.5rem;
+}
