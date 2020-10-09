@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 
 mongoose
   .connect(
-    "mongodb+srv://vishal-admin:26lemon26@cluster0.lndrq.mongodb.net/blog?retryWrites=true&w=majority",
+    "add text",
     { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
   )
   .then(() => {

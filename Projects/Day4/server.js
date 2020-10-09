@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb+srv://vishal-admin:26lemon26@cluster0.ymtzt.mongodb.net/todolistdb?retryWrites=true&w=majority",
+  "add text",
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
 );
 
